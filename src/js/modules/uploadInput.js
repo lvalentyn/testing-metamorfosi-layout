@@ -1,7 +1,6 @@
 const uploadInput = () => {
 
-	// const fileInputs = document.querySelectorAll('[name="upload"]');
-	const upload = document.querySelector('[name="upload"]');
+	const upload = document.querySelector('.contact-us__upload-input');
 
 	['dragenter', 'dragleave', 'dragover', 'drop'].forEach(eventName => {
 		upload.addEventListener(eventName, preventDefaults, false);
@@ -28,7 +27,6 @@ const uploadInput = () => {
 	});
 
 	upload.addEventListener('drop', (e) => {
-		console.log(e.name);
 		upload.files = e.dataTransfer.files;
 		console.log(upload.files);
 		let dots;

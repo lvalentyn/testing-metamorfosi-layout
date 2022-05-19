@@ -1,6 +1,7 @@
 @import '../../scss/vars';
 
 .contact-us {
+
 	&__upload {
 		position: relative;
 		overflow: hidden;
@@ -85,7 +86,6 @@
 
 	select::-ms-expand {
 		display: none;
-		/* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
 	}
 
 	@include maxW($xs) {

@@ -1,0 +1,107 @@
+@import './mixins.scss';
+
+/*--------------- page -------------*/
+$page-width: 1920;
+$container-padding: 20px;
+$container-width: 1820px;
+
+/*--------------- media -------------*/
+$xxs: 568px; //xxs
+$xs: 667px; //xs
+$sm: 768px; //sm
+$md: 1024px; //md
+$xl: 1366px; //xl
+$lg: 1470px; //lg
+
+/*--------------- font -------------*/
+$font-primary: 'Ubuntu',
+	sans-serif;
+
+$font-size: 1.6rem;
+$font-size-tab: 2rem;
+$font-size-desk: 2.4rem;
+
+$h1-size: 3.4rem;
+$h1-size-tab: 5.4rem;
+$h1-size-desk: 7.2rem;
+
+$h2-size: 2.4rem;
+$h2-size-tab: 3.4rem;
+$h2-size-desk: 5.4rem;
+
+$h3-size: 2rem;
+$h3-size-tab: 2.4rem;
+$h3-size-desk: 3.4rem;
+/*--------------- colors -------------*/
+
+// basic
+$primary-color: #3D3D3D;
+$secondary-color: #FFF;
+
+$title-color: #101020;
+
+$bg-color: #F8F8F8;
+$section-bg-light: linear-gradient(90deg, #F8F8F8, #FFF);
+$section-bg-light-mob: #FFF;
+$section-bg-dark: #17191D;
+
+$btn-color: #FBFBFB;
+$btn-bg: #FF0B53;
+$btn-bg-sec: #101020;
+$btn-bg-hov: #97123a;
+$btn-border: #FFF;
+
+$input-placeholder: #585858;
+$input-border: rgba(0, 0, 0, 0.15);
+
+
+// navbar
+$navbar-link: #B1B1B1;
+$navbar-social: #fff;
+$navbar-social-hov: #FF0B53;
+
+// partners
+$partners-color: #575757;
+$partners-bg: #FFF;
+$partners-border: #DEDEDE;
+$partners-shadow: rgba(0, 0, 0, 0.1);
+
+// team
+$team-color: #FFF;
+$team-color-alt: #F2F2F2;
+$team-tab-color: #101020;
+$team-tab-color-hov: #FFFFFF;
+$team-tab-bg: #F0F0F0;
+$team-tab-bg: #F0F0F0;
+$team-tab-decor: #FF0B53;
+$team-thumb: #17191D;
+$team-rail: #676767;
+$team-arrow-border: #DEDEDE;
+$team-arrow-bg: #F8F8F8;
+$team-hover-bg: #000;
+
+$team-border: #9A9A9A;
+
+// contact-us
+$contact-us-color: #101020;
+$contact-us-border: #101020;
+
+// footer
+$footer-color: #FFF;
+$footer-color-alt: #B1B1B1;
+$footer-decor: #FF0B53;
+$footer-social: #FF0B53;
+$footer-social-hov: #FFF;
+
+// popup
+$popup-bg: #FFF;
+$popup-bg-alt: #F4F4F4;
+$popup-color: #585858;
+$popup-color-alt: #2C2C2C;
+$popup-shadow: rgba(0, 0, 0, 0.15);
+$popup-border: #9A9A9A;
+$popup-icon: #FF0B53;
+$popup-icon-hov: #97123a;
+$popup-close: #09121F;
+$popup-close-bg: #F8F8F8;
+$popup-close-border: #DEDEDE;

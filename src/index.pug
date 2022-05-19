@@ -1,0 +1,51 @@
+doctype html
+html 
+	head(lang="en")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel='icon' href='files/favicon.ico')
+		title Testing
+		link(rel="stylesheet" href="css/style.min.css")
+	body
+		.page#home
+			
+
+			include pug/navbar/navbar
+			.section.section--dark
+				.section__decor.section__decor--lines
+				.section__decor.section__decor--circle
+				.section__decor.section__decor--circle-sec
+				.section__decor.section__decor--cross
+				.section__decor.section__decor--cross-sec
+				.section__decor.section__decor--lines-sec
+				.container
+					include pug/banner/banner
+
+			.container.p-t-b#partners
+				h2.h2 Our Partners
+				include pug/partners/partners
+
+			.section.section--light.p-t-b#team
+				.section__decor.section__decor--cross-sec.box
+				//- .section__decor.section__decor--cross-sec
+				.container
+					h2.h2 Our Team
+					include pug/team/team
+
+			.section.p-t-b.p-bot#contact
+				.section__bg
+					picture
+						source(media="(min-width: 768px)" srcset="@img/form-bg-desk.jpg")
+						img(src="@img/form-bg-mob.jpg" alt="banner-bg-mob")
+				.container
+					h2.h2 Contact Us
+					include pug/contact-us/contact-us
+
+			.section.section--bg.p-t-b
+				.section__bg 
+					img(src="@img/footer-bg-desk.jpg" alt="footer-bg-desk")
+				.container
+					h2.h2.h2--alt Where You Can Find Us?
+					include pug/footer/footer
+		include pug/popup/popup
+		script(src="js/app.min.js") 

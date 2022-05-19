@@ -1,0 +1,16 @@
+@function svg-color($color) {
+	@return '%23'+str-slice('#{$color}', 2, -1);
+}
+
+// media
+@mixin minW($val) {
+	@media screen and (min-width: $val) {
+		@content;
+	}
+}
+
+@mixin maxW($val) {
+	@media only screen and (max-width: ($val - 1px)) {
+		@content;
+	}
+}

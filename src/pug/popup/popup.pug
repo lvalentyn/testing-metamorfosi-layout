@@ -1,0 +1,23 @@
+- const socialList3 =['fb', 'inst',  'in', 'tw']
+
+mixin el(props={})
+	li.popup__row
+		p.popup__key #{props.key}
+		p.popup__descr #{props.descr}
+
+.popup.js-modal
+	.popup__content
+		.popup__close
+		.popup__wrapper.js-slider-popup
+			.popup__top
+				.popup__img
+					img(src="@img/popup-photo.jpg", alt="team photo")
+				ul.popup__info
+					+el({key: 'Name:', descr: 'Tom Dou'})
+					+el({key: 'Position:', descr: 'Front-End'})
+					+el({key: 'Phone:', descr: '+3125789075'})
+					+el({key: 'Email:', descr: 'username@mail.com'})
+					li.popup__social-box
+						each soc in socialList3
+							a(href=`/` aria-label=`${soc} link` class=`popup__soc--${soc}`).popup__soc
+			p.popup__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

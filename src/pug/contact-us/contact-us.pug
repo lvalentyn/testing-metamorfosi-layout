@@ -1,0 +1,18 @@
+section.contact-us
+	form.contact-us__form(action="/")
+		.contact-us__header
+			input.contact-us__input(type="text" name="name" placeholder="Your Name" required)
+			input.contact-us__input(type="email" name="email" placeholder="Email Address" required)
+			input.contact-us__input(type="text" name="phone" placeholder="Phone Number" required)
+			select.contact-us__input
+				option(value='') Choose your job type
+				option(value='frontEnd') Front-end
+				option(value='backEnd') Back-end
+				option(value='devOps') DevOps
+		textarea(name='message' placeholder='Message')
+	
+		.contact-us__btn-box
+			.contact-us__upload.js-upload
+				.contact-us__upload-btn  Upload your CV
+				input.contact-us__upload-input(type='file' name='upload' multiple )
+			button.contact-us__btn.btn.btn--form(type="submit" name="submit") Submit

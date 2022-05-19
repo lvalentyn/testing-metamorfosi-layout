@@ -1,0 +1,65 @@
+@import '../../scss/vars';
+
+.banner {
+
+	&__box {
+		width: 100%;
+		max-width: 1268px;
+		margin: 0 auto;
+		padding: 56px 20px;
+
+		border-radius: 7px;
+		background: linear-gradient(104.93deg, rgba(122, 122, 122, 0.19) 1.86%, rgba(122, 122, 122, 0) 104.73%);
+		filter: drop-shadow(0px 4px 4px rgba(50, 50, 50, 0.15));
+		backdrop-filter: blur(40px);
+	}
+
+	&__title,
+	&__descr {
+		text-align: center;
+		color: $secondary-color;
+	}
+
+	&__descr {
+		margin: 0 auto;
+		max-width: 742px;
+		margin-bottom: 40px;
+
+		font-weight: 300;
+	}
+
+	&__btn-box {
+		margin: -15px -20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__btn {
+		margin: 15px 20px;
+	}
+
+	@include minW($sm) {
+		&__descr {
+			margin-bottom: 60px;
+		}
+
+		&__btn-box {
+			margin: 0px -30px;
+		}
+
+		&__btn {
+			margin: 0px 30px;
+		}
+	}
+
+	@include minW($lg) {
+		&__descr {
+			margin-bottom: 112px;
+		}
+
+		&__box {
+			padding: 72px 20px;
+		}
+	}
+}

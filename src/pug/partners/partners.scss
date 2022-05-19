@@ -1,0 +1,185 @@
+@import '../../scss/vars';
+
+.partners {
+	&__container {
+		margin-bottom: 30px;
+	}
+
+	&__card,
+	&__tab {
+		padding: 10px;
+
+		background-color: $partners-bg;
+		border: 1px solid $partners-border;
+		box-shadow: 0px 2px 10px $partners-shadow;
+		border-radius: 10px;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 20px;
+	}
+
+	&__ava {
+		width: 44px;
+		height: 44px;
+
+		margin-right: 10px;
+
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__name {
+		margin-bottom: 5px;
+
+		font-weight: 500;
+		font-size: 2rem;
+	}
+
+	&__pos {
+		color: $partners-color;
+	}
+
+	&__descr {
+		font-weight: 300;
+		line-height: 22px;
+
+
+	}
+
+	&__menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		gap: 16px;
+	}
+
+	&__tab {
+		padding: 9px 10px;
+		border-radius: 7px;
+
+		img {
+			isolation: isolate;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	@include minW($xxs) {
+		&__menu {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: repeat(2, 1fr);
+		}
+
+		&__tab {
+			cursor: pointer;
+		}
+	}
+
+	@include maxW($sm) {
+		&__descr {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -moz-box;
+			-moz-box-orient: vertical;
+			display: -webkit-box;
+			-webkit-line-clamp: 7;
+			-webkit-box-orient: vertical;
+			line-clamp: 7;
+			box-orient: vertical;
+		}
+	}
+
+	@include minW($sm) {
+		&__box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+
+		&__container {
+			margin: 0;
+		}
+
+		&__card {
+			height: 100%;
+			padding: 15px;
+		}
+
+		&__tab {
+			border-radius: 10px;
+		}
+
+		&__ava {
+			width: 70px;
+			height: 70px;
+		}
+
+		&__menu {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(3, 1fr);
+
+		}
+
+	}
+
+	@include minW($md) {
+		&__menu {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: repeat(2, 1fr);
+		}
+
+		&__header {
+			margin-bottom: 30px;
+		}
+
+		&__ava {
+			margin-right: 15px;
+		}
+
+		&__name {
+			font-size: 2.4rem;
+			margin-bottom: 10px;
+		}
+
+		&__pos {
+			font-size: 2rem;
+		}
+
+		&__descr {
+			font-size: 2rem;
+			line-height: 30px;
+		}
+	}
+
+	@include minW($lg) {
+		&__box {
+			grid-template-columns: calc(49% - 11px) 1fr;
+		}
+
+
+		&__card {
+			padding: 30px;
+		}
+
+		&__menu {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: repeat(2, 1fr);
+			gap: 20px 20px;
+
+		}
+
+
+	}
+
+}

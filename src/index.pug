@@ -8,16 +8,15 @@ html
 		link(rel="stylesheet" href="css/style.min.css")
 	body
 		.page#home
-			
 
 			include pug/navbar/navbar
 			.section.section--dark
 				.section__decor.section__decor--lines
-				.section__decor.section__decor--circle
-				.section__decor.section__decor--circle-sec
-				.section__decor.section__decor--cross
-				.section__decor.section__decor--cross-sec
+				.section__decor.section__decor--circle.js-gsap-up
+				.section__decor.section__decor--circle-sec.js-gsap-down
+				.section__decor.section__decor--cross-sec.js-gsap-cross-2
 				.section__decor.section__decor--lines-sec
+				.section__decor.section__decor--cross.js-gsap-cross-1
 				.container
 					include pug/banner/banner
 
@@ -26,8 +25,8 @@ html
 				include pug/partners/partners
 
 			.section.section--light.p-t-b#team
-				.section__decor.section__decor--cross-alt
-				.section__decor.section__decor--cross-alt
+				.section__decor.section__decor--cross-alt.js-gsap-right
+				.section__decor.section__decor--cross-alt.js-gsap-left
 				.container
 					h2.h2(data-aos="fade-right") Our Team
 					include pug/team/team

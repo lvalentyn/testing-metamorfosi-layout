@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html> 
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="files/favicon.ico">
     <title>Testing</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220519215548">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220519221226">
   </head>
   <body>
     <div class="page" id="home">
-      <section class="navbar js-sticky">
+      <div class="navbar js-sticky">
         <div class="container">
           <div class="navbar__row"><a class="navbar__logo" href="#home" aria-label="main logo"></a>
             <div class="navbar__burger js-burger-btn"><span></span></div>
@@ -27,7 +27,7 @@
             </nav>
           </div>
         </div>
-      </section>
+      </div>
       <div class="section section--dark">
         <div class="section__decor section__decor--lines"></div>
         <div class="section__decor section__decor--circle js-gsap-up"></div>
@@ -136,19 +136,13 @@
               <div class="team__wrapper" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="team__menu js-team-menu">
                   <label class="team__tab js-team-tab active"> 
-                    <input type="radio" name="radio">
-                    <div class="team__decor"></div>
-                    <div class="team__icon"></div>Team 1
+                    <input type="radio" name="radio"><span class="team__decor"></span><span class="team__icon"></span>Team 1
                   </label>
                   <label class="team__tab js-team-tab">
-                    <input type="radio" name="radio">
-                    <div class="team__decor"></div>
-                    <div class="team__icon"></div>Team 2
+                    <input type="radio" name="radio"><span class="team__decor"></span><span class="team__icon"></span>Team 2
                   </label>
                   <label class="team__tab js-team-tab">
-                    <input type="radio" name="radio">
-                    <div class="team__decor"></div>
-                    <div class="team__icon"></div>Team 3
+                    <input type="radio" name="radio"><span class="team__decor"></span><span class="team__icon"></span>Team 3
                   </label>
                 </div>
                 <div class="team__content js-team-content active">
@@ -869,6 +863,6 @@
         </div>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220519215548"> </script>
+    <script src="js/app.min.js?_v=20220519221226"> </script>
   </body>
 </html>

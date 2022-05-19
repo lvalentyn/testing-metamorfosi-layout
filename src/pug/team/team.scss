@@ -166,10 +166,13 @@
 		}
 	}
 
-	.swiper-slide img {
-		display: block;
-		width: 100%;
-		height: auto;
+	&__img {
+		max-height: 345px;
+
+		img {
+			display: block;
+			width: 100%;
+		}
 	}
 
 	.swiper-scrollbar {
@@ -338,7 +341,7 @@
 		}
 
 		.swiper-scrollbar {
-			width: 70%;
+			width: 60%;
 		}
 
 		.swiper-button-next {

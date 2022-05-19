@@ -47,7 +47,8 @@ section.team
 						.swiper-wrapper
 							- for (let i = 0; i < 3; ++i)
 								.swiper-slide 
-									img(src="@img/team-photo-1.jpg" alt='team photo')
+									.team__img
+										img(src="@img/team-photo-1.jpg" alt='team photo')
 									.team__hover 
 										.team__name Tom Dou
 										.team__pos Front-End
@@ -59,7 +60,8 @@ section.team
 												pos: 'Front-End'
 											})
 								.swiper-slide 
-									img(src="@img/team-photo-2.jpg" alt='team photo')
+									.team__img
+										img(src="@img/team-photo-2.jpg" alt='team photo')
 									.team__hover 
 										.team__name John Doe
 										.team__pos Back-End
@@ -78,8 +80,9 @@ section.team
 					.swiper.js-team-slider
 						.swiper-wrapper
 							- for (let i = 0; i < 3; ++i)
-								.swiper-slide 
-									img(src="@img/team-photo-1.jpg" alt='team photo')
+								.swiper-slide
+									.team__img
+										img(src="@img/team-photo-1.jpg" alt='team photo')
 									.team__hover 
 										.team__name Tom Dou
 										.team__pos Front-End
@@ -91,7 +94,8 @@ section.team
 												pos: 'Front-End'
 											})
 								.swiper-slide 
-									img(src="@img/team-photo-2.jpg" alt='team photo')
+									.team__img
+										img(src="@img/team-photo-2.jpg" alt='team photo')
 									.team__hover 
 										.team__name John Doe
 										.team__pos Back-End
@@ -110,8 +114,9 @@ section.team
 					.swiper.js-team-slider
 						.swiper-wrapper
 							- for (let i = 0; i < 3; ++i)
-								.swiper-slide 
-									img(src="@img/team-photo-1.jpg" alt='team photo')
+								.swiper-slide
+									.team__img
+										img(src="@img/team-photo-1.jpg" alt='team photo')
 									.team__hover 
 										.team__name Tom Dou
 										.team__pos Front-End
@@ -122,8 +127,9 @@ section.team
 												name: 'Tom Dou',
 												pos: 'Front-End'
 											})
-								.swiper-slide 
-									img(src="@img/team-photo-2.jpg" alt='team photo')
+								.swiper-slide
+									.team__img
+										img(src="@img/team-photo-2.jpg" alt='team photo')
 									.team__hover 
 										.team__name John Doe
 										.team__pos Back-End

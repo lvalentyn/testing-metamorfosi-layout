@@ -53,7 +53,15 @@
 		font-weight: 300;
 		line-height: 22px;
 
-
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -moz-box;
+		-moz-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		line-clamp: 6;
+		box-orient: vertical;
 	}
 
 	&__menu {
@@ -83,20 +91,6 @@
 
 		&__tab {
 			cursor: pointer;
-		}
-	}
-
-	@include maxW($sm) {
-		&__descr {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: -moz-box;
-			-moz-box-orient: vertical;
-			display: -webkit-box;
-			-webkit-line-clamp: 7;
-			-webkit-box-orient: vertical;
-			line-clamp: 7;
-			box-orient: vertical;
 		}
 	}
 

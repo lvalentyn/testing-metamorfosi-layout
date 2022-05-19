@@ -36,17 +36,15 @@ window.addEventListener('DOMContentLoaded', () => {
 				},
 				y: 200
 			})
-			gsap.to('.js-gsap-left', {
+			gsap.to('.js-gsap-rotate-1', {
 				scrollTrigger: {
 					scrub: 1
 				},
-				x: -200
+				rotate: 360,
 			})
-			gsap.to('.js-gsap-right', {
-				scrollTrigger: {
-					scrub: 1
-				},
-				x: 200
+			gsap.to('.js-gsap-rotate-2', {
+				duration: 30,
+				rotate: 360,
 			})
 
 			gsap.to('.js-gsap-cross-1', {
@@ -80,8 +78,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		end: 99999,
 		toggleClass: { className: 'sticky', targets: '.js-sticky' }
 	});
-
-
 
 	// my modules
 	smoothScrolling();

@@ -29,18 +29,22 @@ section.team
 			p.team__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Fusce nullam ac sed eget. Dui in eget a tristique. 
 		.team__wrapper(data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine")
 			.team__menu.js-team-menu
-				.team__tab.js-team-tab.active 
+				label.team__tab.js-team-tab.active 
+					input(type="radio" name="radio")
 					.team__decor
 					.team__icon
 					| Team 1
-				.team__tab.js-team-tab
+				label.team__tab.js-team-tab
+					input(type="radio" name="radio")
 					.team__decor
 					.team__icon
 					| Team 2
-				.team__tab.js-team-tab
+				label.team__tab.js-team-tab
+					input(type="radio" name="radio")
 					.team__decor
 					.team__icon
 					| Team 3
+			
 			.team__content.js-team-content.active
 				.team__slider-box
 					.swiper.js-team-slider

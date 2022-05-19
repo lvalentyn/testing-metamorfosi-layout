@@ -1,11 +1,10 @@
 const uploadInput = () => {
 
-	const fileInputs = document.querySelectorAll('[name="upload"]');
+	// const fileInputs = document.querySelectorAll('[name="upload"]');
+	const upload = document.querySelector('[name="upload"]');
 
 	['dragenter', 'dragleave', 'dragover', 'drop'].forEach(eventName => {
-		fileInputs.forEach(input => {
-			input.addEventListener(eventName, preventDefaults, false);
-		});
+		upload.addEventListener(eventName, preventDefaults, false);
 	});
 
 	function preventDefaults(e) {
@@ -22,27 +21,21 @@ const uploadInput = () => {
 	}
 
 	['dragenter', 'dragover'].forEach(eventName => {
-		fileInputs.forEach(input => {
-			input.addEventListener(eventName, () => highlight(input), false);
-		});
+		upload.addEventListener(eventName, () => highlight(upload), false);
 	});
 	['dragleave', 'drop'].forEach(eventName => {
-		fileInputs.forEach(input => {
-			input.addEventListener(eventName, () => unHighlight(input), false);
-		});
+		upload.addEventListener(eventName, () => unHighlight(upload), false);
 	});
 
-	fileInputs.forEach(input => {
-		input.addEventListener('drop', (e) => {
-			console.log(e.name);
-			input.files = e.dataTransfer.files;
-			console.log(input.files);
-			let dots;
-			const arr = input.files[0].name.split('.');
-			arr[0].length > 6 ? dots = "..." : dots = '.';
-			const name = arr[0].substring(0, 10) + dots + arr[1];
-			input.previousElementSibling.textContent = name;
-		});
+	upload.addEventListener('drop', (e) => {
+		console.log(e.name);
+		upload.files = e.dataTransfer.files;
+		console.log(upload.files);
+		let dots;
+		const arr = upload.files[0].name.split('.');
+		arr[0].length > 6 ? dots = "..." : dots = '.';
+		const name = arr[0].substring(0, 10) + dots + arr[1];
+		upload.previousElementSibling.textContent = name;
 	});
 };
 

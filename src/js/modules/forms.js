@@ -1,6 +1,9 @@
 const forms = () => {
 	const form = document.querySelectorAll('form'),
-		inputs = document.querySelectorAll('input');
+		inputs = document.querySelectorAll('input'),
+		text = document.querySelector('textarea'),
+		upload = document.querySelector('[name="upload"]'),
+		select = document.querySelector('select');
 
 	const message = {
 		loading: 'Sending...',
@@ -22,6 +25,9 @@ const forms = () => {
 		inputs.forEach(item => {
 			item.value = ''
 		});
+		select.value = '';
+		text.value = '';
+		upload.previousElementSibling.textContent = 'Upload your CV';
 	};
 
 	form.forEach(item => {
@@ -50,7 +56,7 @@ const forms = () => {
 								item.style.display = 'none';
 							});
 							document.body.style.overflow = '';
-						}, 114000);
+						}, 3000);
 					});
 			}
 		});

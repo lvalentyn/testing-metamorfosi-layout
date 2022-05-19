@@ -35,8 +35,6 @@
 		z-index: 2;
 
 		&:hover {
-
-
 			.team__icon {
 				&:after {
 					opacity: 1;
@@ -67,6 +65,12 @@
 				transform: scaleX(1);
 				transition: transform .3s ease;
 			}
+		}
+
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
 		}
 
 	}

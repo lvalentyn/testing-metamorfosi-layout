@@ -123,8 +123,8 @@
         </section>
       </div>
       <div class="section section--light p-t-b" id="team">
-        <div class="section__decor section__decor--cross-alt js-gsap-right"></div>
-        <div class="section__decor section__decor--cross-alt js-gsap-left"></div>
+        <div class="section__decor section__decor--cross-alt js-gsap-rotate-1"></div>
+        <div class="section__decor section__decor--cross-alt js-gsap-rotate-2"></div>
         <div class="container">
           <h2 class="h2" data-aos="fade-right">Our Team</h2>
           <section class="team">
@@ -135,18 +135,21 @@
               </div>
               <div class="team__wrapper" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="team__menu js-team-menu">
-                  <div class="team__tab js-team-tab active"> 
+                  <label class="team__tab js-team-tab active"> 
+                    <input type="radio" name="radio">
                     <div class="team__decor"></div>
                     <div class="team__icon"></div>Team 1
-                  </div>
-                  <div class="team__tab js-team-tab">
+                  </label>
+                  <label class="team__tab js-team-tab">
+                    <input type="radio" name="radio">
                     <div class="team__decor"></div>
                     <div class="team__icon"></div>Team 2
-                  </div>
-                  <div class="team__tab js-team-tab">
+                  </label>
+                  <label class="team__tab js-team-tab">
+                    <input type="radio" name="radio">
                     <div class="team__decor"></div>
                     <div class="team__icon"></div>Team 3
-                  </div>
+                  </label>
                 </div>
                 <div class="team__content js-team-content active">
                   <div class="team__slider-box">
@@ -804,7 +807,8 @@
               <textarea name="message" placeholder="Message"></textarea>
               <div class="contact-us__btn-box">
                 <div class="contact-us__upload js-upload">
-                  <div class="contact-us__upload-btn"> Upload your CV</div>
+                  <button class="contact-us__upload-btn">Upload your CV</button>
+                  <div class="div"> Файл не выбран</div>
                   <input class="contact-us__upload-input" type="file" name="upload" multiple>
                 </div>
                 <button class="contact-us__btn btn btn--form" type="submit" name="submit">Submit</button>

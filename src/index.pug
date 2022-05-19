@@ -22,14 +22,14 @@ html
 					include pug/banner/banner
 
 			.container.p-t-b#partners
-				h2.h2 Our Partners
+				h2.h2(data-aos="fade-right") Our Partners
 				include pug/partners/partners
 
 			.section.section--light.p-t-b#team
 				.section__decor.section__decor--cross-alt
 				.section__decor.section__decor--cross-alt
 				.container
-					h2.h2 Our Team
+					h2.h2(data-aos="fade-right") Our Team
 					include pug/team/team
 
 			.section.p-t-b.p-bot#contact
@@ -38,14 +38,14 @@ html
 						source(media="(min-width: 768px)" srcset="@img/form-bg-desk.jpg")
 						img(src="@img/form-bg-mob.jpg" alt="banner-bg-mob")
 				.container
-					h2.h2 Contact Us
+					h2.h2(data-aos="fade-right") Contact Us
 					include pug/contact-us/contact-us
 
 			.section.section--bg.p-t-b
 				.section__bg 
 					img(src="@img/footer-bg-desk.jpg" alt="footer-bg-desk")
 				.container
-					h2.h2.h2--alt Where You Can Find Us?
+					h2.h2.h2--alt(data-aos="fade-right") Where You Can Find Us?
 					include pug/footer/footer
 		include pug/popup/popup
 		script(src="js/app.min.js") 

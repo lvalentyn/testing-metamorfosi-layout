@@ -9,13 +9,17 @@ import swiper from "./modules/swiper.js";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all.js";
-
+import Aos from "aos";
+import AOS from "aos/dist/aos.js"
 import $ from "jquery";
 // plugins from npm
-
+window.addEventListener('load', AOS.refresh)
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
-
+	AOS.init({
+		once: true,
+		disable: 'mobile'
+	});
 	// gsap
 	gsap.registerPlugin(ScrollTrigger);
 

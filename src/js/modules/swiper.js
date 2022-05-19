@@ -1,14 +1,9 @@
 import Swiper from "swiper/bundle";
 
 const swiper = (selector) => {
-	// swiper
 	const swiper = new Swiper(`${selector}`, {
-		// slidesPerView: 1,
-		// centeredSlides: true,
-		// slidesPerGroupSkip: 1,
 		slidesPerView: "auto",
 		centeredSlides: true,
-		// spaceBetween: 30,
 		observer: true,
 		observeParents: true,
 		grabCursor: true,
@@ -18,8 +13,6 @@ const swiper = (selector) => {
 		breakpoints: {
 			768: {
 				centeredSlides: false,
-				// slidesPerView: 2,
-				// slidesPerGroup: 2,
 			},
 		},
 		scrollbar: {

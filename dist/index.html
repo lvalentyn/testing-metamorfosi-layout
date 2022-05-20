@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="files/favicon.ico">
     <title>Testing</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220519224101">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220520105231">
   </head>
   <body>
     <div class="page" id="home">
@@ -801,8 +801,8 @@
               <textarea name="message" placeholder="Message"></textarea>
               <div class="contact-us__btn-box">
                 <div class="contact-us__upload js-upload">
-                  <button class="contact-us__upload-btn"> Upload your CV</button>
-                  <input class="contact-us__upload-input" type="file" name="upload">
+                  <label class="contact-us__upload-btn"> Upload your CV</label>
+                  <input class="contact-us__upload-input" type="file" name="upload" onchange="initFile(this)">
                 </div>
                 <button class="contact-us__btn btn btn--form" type="submit" name="submit">Submit</button>
               </div>
@@ -863,6 +863,6 @@
         </div>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220519224101"> </script>
+    <script src="js/app.min.js?_v=20220520105231"> </script>
   </body>
 </html>

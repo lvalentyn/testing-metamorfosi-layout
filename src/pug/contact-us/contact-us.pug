@@ -13,6 +13,6 @@ section.contact-us
 	
 		.contact-us__btn-box
 			.contact-us__upload.js-upload
-				button(type=button).contact-us__upload-btn  Upload your CV
-				input.contact-us__upload-input(type='file' name='upload')
+				label.contact-us__upload-btn  Upload your CV
+				input.contact-us__upload-input(type='file' name='upload' onchange='initFile(this)')
 			button.contact-us__btn.btn.btn--form(type="submit" name="submit") Submit
